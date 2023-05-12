@@ -1,0 +1,84 @@
+PROBLEM STATEMENT:
+Create a calculator that determines your BMI. In a loop, ask the user for their 
+height in inches and weight in pounds. Calculate the BMI and output the BMI 
+calculation with the category that their BMI falls into.
+
+Nouns: 
+  Height (inches), Weight (pounds), BMI, category
+
+Verbs: 
+  Calculate, Output
+
+
+DEFINING DIAGRAM:
+
+INPUTS: 
+  userHeight 
+  userWeight
+  
+PROCESSING:
+  prompt user for "y" to calculate BMI or "n" to stop
+  prompt user for userHeight
+  prompt user for userWeight
+  calculate BMI
+  determine BMI category
+  
+OUTPUTS:
+  BMI
+  Category
+  
+
+SOLUTION ALGORITHM:
+calculateBMI
+  prompt for calculations or to stop
+  prompt for userHeight
+  prompt for userWeight
+  calculate BMI
+  IF BMI < 18.5 then
+    display "Your BMI is BMI, which falls within the underweight range."
+  ELSE IF BMI > 18.5 && BMI <= 24.9 then
+    display "Your BMI is BMI, which falls within the normal range."
+  ELSE IF BMI >= 25 && BMI <= 29.9
+    display "Your BMI is BMI, which falls within the overweight range."
+  ELSE IF BMI >= 30 then
+    display "Your BMI is BMI, which falls within the obese range."
+  END IF
+  Display output
+END
+
+
+TEST PLAN:
+
+VARIABLES: userHeight, userWeight
+
+TEST CASE 1: 
+
+  INPUT VALUES: 62, 95
+
+  EXPECTED RESULT: Your BMI is 17.4, which falls within the underweight range. 
+
+  ACTUAL RESULT: Your BMI is 17.4, which falls within the underweight range.  
+
+TEST CASE 2:
+
+  INPUT VALUES: 60, 100
+
+  EXPECTED RESULT: Your BMI is 19.5, which falls within the normal range. 
+
+  ACTUAL RESULT: Your BMI is 19.5, which falls within the normal range.
+
+TEST CASE 3:
+
+  INPUT VALUES: 58, 140
+
+  EXPECTED RESULT: Your BMI is 29.3, which falls within the overweight range. 
+
+  ACTUAL RESULT: Your BMI is 29.3, which falls within the overweight range. 
+  
+TEST CASE 4:
+
+  INPUT VALUES: 70, 250
+
+  EXPECTED RESULT: Your BMI is 35.9, which falls within the obese range.
+
+  ACTUAL RESULT: Your BMI is 35.9, which falls within the obese range.
